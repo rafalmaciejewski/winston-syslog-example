@@ -19,7 +19,7 @@ export function getLoggerTransports(config: LoggerConfig = {}): Transport[] {
             new Syslog({
                 app_name: `test-logger.${config.appName}`,
                 level: config.level,
-                protocol: 'unix',
+                protocol: 'unix-connect',
                 path: '/dev/log',
             }),
         );
