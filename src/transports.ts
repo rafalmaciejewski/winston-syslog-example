@@ -18,6 +18,8 @@ export function getLoggerTransports(config: LoggerConfig = {}): Transport[] {
         loggerTransports.push(
             new Syslog({
                 app_name: `test-logger.${config.appName}`,
+                protocol: 'unix',
+                path: '/dev/log',
             }),
         );
     }
