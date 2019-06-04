@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@gr/logger module exports should match snapshot 1`] = `
+Object {
+  "LogLevel": Object {
+    "DEBUG": "debug",
+    "ERROR": "error",
+    "INFO": "info",
+    "WARN": "warn",
+  },
+  "Logger": [Function],
+  "configure": [Function],
+  "getLogger": [Function],
+}
+`;
