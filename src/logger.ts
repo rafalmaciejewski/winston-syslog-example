@@ -19,13 +19,12 @@ export interface LoggerConfig {
 }
 
 export class Logger {
-
     private logger: WinstonLogger;
 
     constructor(config: LoggerConfig) {
-
         this.logger = createLogger({
             level: config.level,
+            levels: config.levels,
             format: getLoggerFormats(config),
             transports: getLoggerTransports(config),
         });
@@ -62,5 +61,4 @@ export class Logger {
     public close(): WinstonLogger {
         return this.logger.close();
     }
-
 }
