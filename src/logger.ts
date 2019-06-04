@@ -47,7 +47,7 @@ export class Logger {
     }
 
     public warn(message: string, ...args: any): any {
-        this.logger.warn(message, ...args);
+        this.logger.log('warn', message, ...args);
     }
 
     public debug(message: string, ...args: any): any {
